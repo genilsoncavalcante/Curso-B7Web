@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <form method="get" action="este-arquivo-nao-existe.php">
+    <form method="get" action="este-arquivo-nao-existe.php" enctype="multipart/form-data"><!--O enctype é necessário com esse valor determinado para que possa compactar aquivos que serão enviados, neste caso uma foto, e depois de colocar em forma de bytes, pode ser enviado.-->
         <input type="hidden" name="country" value="BR"><!--Este input 'hidden', serve para envio de informações que não ficam visíveis e o usuário não preenche. Apenas é enviado automaticamente.-->
 
         <fieldset>
@@ -30,6 +30,10 @@
                 Idade:<br>
                 <input type="number" name="age" min="18" max="120" required>
             </label><br>
+            <label>
+                Foto:<br>
+                <input type="file" name="photo" accept="image/*"><!--Input para envio de arquivos, com ao accept, podemos fazer que só aceite aquivos de imagens.-->
+            </label>
         </fieldset>
 
         
