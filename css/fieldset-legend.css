@@ -1,0 +1,8 @@
+fieldset{
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 2px solid rgb(95, 95, 95);
+}
+legend{
+    color: rgb(95, 95, 95);
+}
