@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+.container{
+    width: calc(100% - 20px);
+    height: 200px;
+    background-color: #CCC;
+
+    border: 2px solid green;
+    color: #FF0000;
+    /*Algumas propriedades são herdadas em strong, mas outras não, exemplo: "border" - que é herdado somento no container.*/
+}
+.container strong{
+    border: 1px solid black;
+}
