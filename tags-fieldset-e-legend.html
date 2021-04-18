@@ -9,17 +9,17 @@
 </head>
 <body>
 
-    <form method="post">
+    <form method="post" action="este-arquivo-nao-existe.php">
 
         <fieldset>
             <legend>Dados Pessoas</legend>
             <label>
                 Primeiro Nome:<br>
-                <input type="text" name="name">
+                <input type="text" name="name" required minlength="2" maxlength="17">
             </label><br>
             <label>
                 Sobrenome:<br>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" required minlength="2" maxlength="45">
             </label><br>    
         </fieldset>
 
@@ -39,5 +39,15 @@
         <input type="submit" value="cadastrar">
 
     </form>
+
+    <!--
+        Aprendizado
+
+        atributo 'required' torna um campo input obrigatório para o envio.
+
+        'minlength' - É um atributo que só envia se tiver uma quantidade mínima de caracters para o envio.
+
+        'maxlength' - É a quantidade máxima que um campo pode aceitar, não o trapassando do informado.
+    -->
 </body>
 </html>
