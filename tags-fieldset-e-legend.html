@@ -9,7 +9,8 @@
 </head>
 <body>
 
-    <form method="post" action="este-arquivo-nao-existe.php">
+    <form method="get" action="este-arquivo-nao-existe.php">
+        <input type="hidden" name="country" value="BR"><!--Este input 'hidden', serve para envio de informações que não ficam visíveis e o usuário não preenche. Apenas é enviado automaticamente.-->
 
         <fieldset>
             <legend>Dados Pessoas</legend>
