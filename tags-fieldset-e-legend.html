@@ -19,8 +19,16 @@
             </label><br>
             <label>
                 Sobrenome:<br>
-                <input type="text" name="lastname" required minlength="2" maxlength="45">
+                <input type="text" name="lastname" maxlength="45">
             </label><br>    
+            <label>
+                E-mail:<br>
+                <input type="text" name="email" pattern="(^[a-zA-Z0-9-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail" required>
+            </label><br>
+            <label>
+                Idade:<br>
+                <input type="number" name="age" min="18" max="120" required>
+            </label><br>
         </fieldset>
 
         
@@ -48,6 +56,19 @@
         'minlength' - É um atributo que só envia se tiver uma quantidade mínima de caracters para o envio.
 
         'maxlength' - É a quantidade máxima que um campo pode aceitar, não o trapassando do informado.
+
+        --------
+
+        para campos numéricos, com o type="number", temos alguns atributos:
+        -step="2" - o número vai pulando de dois em dois ao clicar na setinha.
+
+        -min="18" - Valor mínimo aceito.
+        -max="120" - Valor máximo aceito.
+        OBS: o min e o max pode ser utilizado para datas, o que valida muito para a segurança. Estabelecer dadas exigidas.
+
+        --------
+
+        pattern - Padrão estabelecido para validar algo, ex: email. Com esse atributo você pode criar seus próprios padrões ou pegar padrões já estabelecidos.
     -->
 </body>
 </html>
