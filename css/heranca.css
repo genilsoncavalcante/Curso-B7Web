@@ -1,9 +1,12 @@
-body{
-    margin: 0;
-}
 .container{
-    color: green;/*Regra mais específica(APLICADA)*/
+    color: green;
 }
-div{
-    color: red;/*Regra mais geral*/
-}
+
+/*
+    **CASCATA**
+
+    CARREGAMENTO POR ORDEM DO CSS EM UMA PÁGINA.
+    1° - CSS externo(REGRA MAIS FRACA)
+    2° - CSS interno(SEGUNDA REGRA MAIS FORTE)
+    3° - CSS inline(REGRA MAIS FORTE)
+*/
