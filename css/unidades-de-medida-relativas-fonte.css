@@ -1,0 +1,31 @@
+html{
+    font-size: 9px;
+}
+body{
+    font-size: 10px;
+}
+h1{
+    font-size: 3rem;/*O 'rem' é relativo de só e somente só a primeira tag definida, no caso o html*/
+}
+.box{
+    font-size: 2em;/*O 'em' é relacionado a tag pai, neste caso o body.*/
+}
+.interno{
+    width: 10em;
+    height: 10em;
+    background-color: #DDD;
+}
+
+/*
+
+Unidades Absolutas:
+(px, cm, mm...)
+
+Unidades Relativas:
+(em, rem) - Bem utilizadas para trabalhar com RESPONSIVIDADE.
+
+Com as unidades relativas determinadas em tags filhas, temos que as tags pais, quando possuem suas unidades absolutas, a quantidade de medida relativa é multipla das unidades absolutas.
+EX:
+-Em uma tag body pai de uma tag div, quando definimos o "font-size: 20px;" - medida absoluta e para a div um "width: 10em;", estamos dizendo que o width possui 10 vezes o tamanho definido na tag pai.
+
+*/
