@@ -1,0 +1,19 @@
+img{
+    width: 500px;/*Com uma autura e largura fixa definida pode distorcer a imagem, mas para isso usamos as propriedades:*/
+    height: 500px;
+    object-fit: cover;/*Essa propriedade define se a imagem ficará com a imagem distorcida ou não.
+    
+    VALORES: 
+    fill - Valor padrão, nenhum efeito aplicável.
+
+    contain - Valor que faz com que a imagem reduza sem sofrer distorções, porém a área será a mesma, só com espaçamentos em branco.
+
+    cover - mantem a proporção da imagem, mas não aparece ela por completo, só uma parte em uma área definida.
+
+    none - somente corta a imagem, sem redimensioná-la.
+
+    scale-down - é aparentemente igual a do valor 'contain'.
+
+    OBS: o mais utilizado é o 'cover'.
+    */
+}
