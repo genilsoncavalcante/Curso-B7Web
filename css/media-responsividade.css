@@ -1,24 +1,14 @@
 body{
     background-color: #00ff00;
 }
-
-@media (min-width: 1000px){
-    body{
-        background-color: #0000ff;
-    }
+h1{
+    font-size: 40px;
+    font-weight: bold;
 }
 
-@media (min-width: 700px) and (max-width: 1000px){
-    body{
-        background-color: purple;
-    }
-}
-
-@media (max-width: 600px){
-    body{
-        background-color: #ff0000;
-    }
+@media only print {/*Para quando for imprimir a página fazer as seguintes alterações:*/
     h1{
-        font-size: 15px;
+        font-size: 20px;
+        font-weight: normal;
     }
 }
