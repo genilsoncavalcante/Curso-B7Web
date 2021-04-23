@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+}
+
+@media (orientation: landscape){/*Orientação Horizontal*/
+    body{
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait){/*Orientação Vertical*/
+    body{
+        flex-direction: column;
+    }
+}
+
+/*
+OBS: Essa orientação se dá pela proporção de tela, onde se a aultura for menor que a largura, é aplicado o (landscape), se caso o contrário, é apricado o (portrait). Ou seja, o orientation é basiado no espaço disponível da tela.
+*/
