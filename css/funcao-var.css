@@ -1,0 +1,16 @@
+:root{
+    --color-fundo: rgb(53, 53, 53);
+    --color-text: rgb(177, 177, 177);
+    --bg-color: #fff
+}
+
+body{
+    background-color: var(--color-fundo);
+}
+h1{
+    color: var(--color-text, #0000ff, var(--color-fundo));/*Perceba que podemos usar mais de um valor, assim caso não teja um, pode-se ser substituido pelo próximo e assim por diante.*/
+}
+p{
+    background-color: var(--bg-color);
+    color: var(--color-text);
+}
