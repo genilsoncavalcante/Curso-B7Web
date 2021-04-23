@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+}
+.container{
+    width: calc(100% - 20px);/*Em uma tela com largura 100%, reduz 20px com essa função.*/
+    height: 200px;
+    background-color: #CCC;
+}
