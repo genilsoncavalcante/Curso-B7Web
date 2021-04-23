@@ -1,0 +1,18 @@
+.imagem{
+    width: 100%;
+}
+.imagem-area{
+    position: relative;
+    height: 0px;
+    background-color: #CCC;
+    padding: 0px 0px 56.25%;
+}
+.imagem-area img{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
