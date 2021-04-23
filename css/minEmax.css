@@ -1,0 +1,3 @@
+img{
+    width: min(50%, 400px);/*Pega o menor valor, no max, pegar o maior valor.*/
+}
