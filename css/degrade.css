@@ -1,0 +1,10 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #0000ff;/*Caso o degradÊ não funcione, ele irá aplicar esse aqui.*/
+    background: linear-gradient(-45deg, #fff, #0000ff);/*Aplicação do degradê, os graus determina a posição para o degradê*/
+    /*OBS: Essa funcionalidade não é compatível com todos navegadores, por isso devemos colocar:*/
+    background: -moz-linear-gradient(#fff, #0000ff);/*para o mozilla*/
+    background: -o-linear-gradient(#fff, #0000ff);/*para o opera*/
+    background: -webkit-linear-gradient(#fff, #0000ff);/*para o safari*/
+}
