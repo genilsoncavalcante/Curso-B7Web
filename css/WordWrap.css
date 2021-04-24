@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+}
+.caixa{
+    width: 150px;
+    height: auto;
+    border: 1px solid #000;
+    word-wrap: break-word;/*Quebra a palavra que não cabe em uma caixa*/
+}
