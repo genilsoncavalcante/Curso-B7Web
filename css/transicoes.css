@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+.caixa{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 100px;
+    transition: all .6s linear;/*'all' - aplicação em qualquer tipo de elemento, '3s' - tempo de duração, 'linear' - significa que a transição vai começar e terminar em uma mesma velocidade. OBS: existe vários tipos de transição.*/
+}
+.caixa:hover{
+    width: 300px;
+    background-color: red;
+}
