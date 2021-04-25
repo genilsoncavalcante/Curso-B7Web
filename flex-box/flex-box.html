@@ -8,28 +8,18 @@
     <style>
         .caixa{
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;/*Alinha todo o conteúdo no centro*/
+            align-items: center;/*Alinha os itens em um eixo transversal*/
+            /*OBS: o 'justify-content' faz um alinhamento na linha(horizontalmente) já o align-items faz o alinhamento para a coluna(verticalmente)*/
+            height: 500px;
+            flex-flow: row wrap;/*Este atrivuto define dois valores, tanto para o flex-diretion quanto para o flex-wrap*/
         }
-        .caixa .div1{
-            width: 100px;
-            height: 100px;
+        .caixa .div1, .div2, .div3{
+            width: 200px;
+            height: 200px;
             background-color: #0000ff;
             margin: 5px;
-            flex: 1;
-        }
-        .caixa .div2{
-            width: 100px;
-            height: 100px;
-            background-color: #0000ff;
-            margin: 5px;
-            flex: 1;
-        }
-        .caixa .div3{
-            width: 100px;
-            height: 100px;
-            background-color: #0000ff;
-            margin: 5px;
-            flex: 3;
         }
     </style>
 </head>
