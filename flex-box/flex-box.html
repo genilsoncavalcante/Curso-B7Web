@@ -1,44 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendizado</title>
     <style>
-        .caixa{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;/*Alinha todo o conteúdo no centro*/
-            align-items: center;/*Alinha os itens em um eixo transversal*/
-            /*OBS: o 'justify-content' faz um alinhamento na linha(horizontalmente) já o align-items faz o alinhamento para a coluna(verticalmente)*/
-            height: 500px;
-            flex-flow: row wrap;/*Este atributo define dois valores, tanto para o flex-diretion quanto para o flex-wrap*/
-            
-            /*
+        /*
+            COMENTÁRIOS:
+        
             *justify-content: flex-start' - alinha no começo do flex.
             *justify-content: flex-end' - alinha no final do flex, na sua direita.
             *justify-content: space-around' - deixa um espaçamento igual e distribuido entre todos os itens.
             *justify-content: space-between' - deixa o espaçamento igual entre os itens, porém sem espaçamento no início e no final.
             OBS: esses mesmos valores se aplicam ao 'align-items', porém ao contrário.
-            
-            
-            
-            */
+        
+        */
+
+        h1{
+            margin: 0;
+            padding: 5px;
+            display: inline;
+            border-top: solid 2px rgb(28, 187, 160);
+            border-right: solid 2px rgb(28, 187, 160);
+            border-top-right-radius: 25px;
+            background-image: linear-gradient(-45deg, rgb(28, 187, 160), rgb(67, 67, 245));
+            background-size: 350% 250%;
+            animation: gradient 8s ease infinite;
         }
-        .caixa .div1, .div2, .div3{
+        @keyframes gradient{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+
+        .box{
+            display: flex;
+            margin: 15px;
+            padding: 25px;
+            border-left: solid 2px rgb(28, 187, 160);
+            border-bottom: solid 2px rgb(28, 187, 160);
+            border-bottom-left-radius: 15px;
+        }
+        .box div{
             width: 200px;
             height: 200px;
-            background-color: #0000ff;
-            margin: 5px;
+            margin: 10px;
+            padding: 5px;
+            background-color: blue;
+            color: red;
+            font-weight: bold;
+        }
+
+        .box1{
         }
     </style>
 </head>
 <body>
-    <div class="caixa">
-        <div class="div1"></div>
-        <div class="div2"></div>
-        <div class="div3"></div>
+    <h1 class="animation">FLEX-BOX</h1>
+    
+    <div class="box box1">
+        <div class="div1">1.</div>
+        <div class="div2">2.</div>
+        <div class="div3">3.</div>
+    </div>
+
+    <div class="box box2">
+        <div class="div1">1.</div>
+        <div class="div2">2.</div>
+        <div class="div3">3.</div>
     </div>
 </body>
 </html>
