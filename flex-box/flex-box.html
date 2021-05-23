@@ -17,6 +17,10 @@
         
         */
 
+        body{
+            background-color: rgb(63, 61, 61);
+        }
+
         h1{
             margin: 0;
             padding: 5px;
@@ -40,15 +44,17 @@
             }
         }
 
-        .box{
+        .container{
             display: flex;
             margin: 15px;
             padding: 25px;
             border-left: solid 2px rgb(28, 187, 160);
             border-bottom: solid 2px rgb(28, 187, 160);
             border-bottom-left-radius: 15px;
+            background-color: #DDD;
+            font-size: 1.5em;
         }
-        .box div{
+        .container div{
             width: 200px;
             height: 200px;
             margin: 10px;
@@ -59,19 +65,86 @@
         }
 
         .box1{
+            flex-direction: row;/*PADRÃO*/
+        }
+        /*# COMPARTILHANDO O MESMO ESPAÇO #*/
+        .box1 .div1{
+            flex: 1;
+        }
+        .box1 .div2{
+            flex: 1;
+        }
+        .box1 .div3{
+            flex: 1;
+        }
+
+
+        .box2{
+            flex-direction: column;/*DIREÇÃO EM COLUNA*/
+        }
+        .box2 .div1{
+            flex: 1;
+        }
+        .box2 .div2{
+            flex: 1;
+        }
+        .box2 .div3{
+            flex: 1;
+        }
+
+
+        .box3{
+            flex-direction: row-reverse;/*DIREÇÃO EM LINHA REVERSA - DIREITA PARA ESQUERDA*/
+        }
+        .box3 .div1{
+            flex: 1;
+        }
+        .box3 .div2{
+            flex: 2;
+        }
+        .box3 .div3{
+            flex: 1;
+        }
+
+
+        .box4{
+            flex-direction: column-reverse;/*DIREÇÃO EM COLUNA REVERSA - BAIXO PARA CIMA*/
+        }
+
+
+        .box5{
+            flex-direction: row;
         }
     </style>
 </head>
 <body>
     <h1 class="animation">FLEX-BOX</h1>
     
-    <div class="box box1">
+    <div class="container box1">
         <div class="div1">1.</div>
         <div class="div2">2.</div>
         <div class="div3">3.</div>
     </div>
 
-    <div class="box box2">
+    <div class="container box2">
+        <div class="div1">1.</div>
+        <div class="div2">2.</div>
+        <div class="div3">3.</div>
+    </div>
+
+    <div class="container box3">
+        <div class="div1">1.</div>
+        <div class="div2">2.</div>
+        <div class="div3">3.</div>
+    </div>
+
+    <div class="container box4">
+        <div class="div1">1.</div>
+        <div class="div2">2.</div>
+        <div class="div3">3.</div>
+    </div>
+
+    <div class="container box5">
         <div class="div1">1.</div>
         <div class="div2">2.</div>
         <div class="div3">3.</div>
