@@ -1,0 +1,31 @@
+body, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    background-color: rgb(223, 173, 107);
+}
+header .container .logo{
+    display: flex;
+    align-items: center;
+}
+header .container .logo a{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+header .container .logo a span{
+    color: rgb(81, 116, 192);
+}
+header .container .menu{
+
+}
